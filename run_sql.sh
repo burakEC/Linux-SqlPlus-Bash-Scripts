@@ -43,7 +43,7 @@ do
       p2=$(date -d "$p2 + $x day" +'%Y%m%d')
       p2_p=$(date -d "$p2" +'%d%m%Y')
       p1_p=$(date -d "$p1" +'%d%m%Y')
-      echo exit | sqlplus MUSD/A14EDf3Qwfd1s@IWIN_CDR_REPORTING @test.sql thy"$p1_p""_""$p2_p" $p1_p $p2_p
+      echo exit | sqlplus $USER/$PASSWD@TNS_NAME @$SQL_FILE.sql $FILE_NAME"$p1_p""_""$p2_p" $p1_p $p2_p
       #echo $p1_p" "$p2_p
     done
 
