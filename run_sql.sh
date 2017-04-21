@@ -1,5 +1,13 @@
 #!/bin/bash
 
+#ASSIGN DB VARIABLES
+USER="TEST"
+PASSWD="PASSWD"
+TNS_NAME="TNS_NAME"
+SQL_FILE="/some/dir/file.sql"
+FILE_NAME="report.csv"
+
+
 for year in `seq 2017 2017`
 do
   for month in `seq 1 3`
