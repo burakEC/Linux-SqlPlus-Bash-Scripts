@@ -1,12 +1,11 @@
 #!/bin/bash
 
 #ASSIGN DB VARIABLES
-USER="TEST"
-PASSWD="PASSWD"
+USER="DB_USER_NAME"
+PASSWD="DB_PASSWD"
 TNS_NAME="TNS_NAME"
 SQL_FILE="/some/dir/file.sql"
 FILE_NAME="report.csv"
-
 
 for year in `seq 2017 2017`
 do
